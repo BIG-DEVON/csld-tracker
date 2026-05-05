@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Initiative {
+  id              String   @id @default(cuid())
+  kpiId           String   @unique // e.g., "SC-1"
+  category        String
+  kpi             String
+  diff            String   // Low, Medium, High
+  synergy         String
+  limitations     String
+  status          String   // Pending, In Progress, Completed
+  suggestedAction String
+  reminderDate    String?
+  notes           String?
+  updatedAt       DateTime @updatedAt
+  createdAt       DateTime @default(now())
+}

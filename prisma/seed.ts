@@ -50,7 +50,15 @@ const rawData = [
   // 7. Reporting & Documentation
   { kpiId: "RD-1", category: "Reporting & Documentation", kpi: "100% submission of monthly, biannual, and annual departmental performance reports within approved timelines.", diff: "Medium", synergy: "OES", limitations: "Time constraints, limited manpower, and late access to information.", status: "In Progress", suggestedAction: "Implement a shared dashboard where departments update their metrics in real-time." },
   { kpiId: "RD-2", category: "Reporting & Documentation", kpi: "100% of reports on meetings, official events and protocol activities prepared and submitted within two weeks of each activity throughout the year.", diff: "Medium", synergy: "OES", limitations: "Incomplete event details, limited manpower, competing priorities, and delayed inputs from officers.", status: "Pending", suggestedAction: "Mandate the use of a standardized event reporting template to speed up drafting." },
-  { kpiId: "RD-3", category: "Reporting & Documentation", kpi: "100% of reports on sensitisation, webinars and VLS prepared and submitted within two weeks of each activity throughout the year.", diff: "Low", synergy: "OES", limitations: "Tight reporting timelines, limited manpower, and competing priorities.", status: "Completed", suggestedAction: "Use AI transcription tools to rapidly draft summaries of virtual learning sessions." }
+  { kpiId: "RD-3", category: "Reporting & Documentation", kpi: "100% of reports on sensitisation, webinars and VLS prepared and submitted within two weeks of each activity throughout the year.", diff: "Low", synergy: "OES", limitations: "Tight reporting timelines, limited manpower, and competing priorities.", status: "Completed", suggestedAction: "Use AI transcription tools to rapidly draft summaries of virtual learning sessions." },
+
+  // 8. Contact Centre Management (NEW)
+  { kpiId: "CCM-1", category: "Contact Centre Management", kpi: "Develop and implement the Contact Centre operational frameworks, SLAs, and SOPs for call handling, escalation, and reporting.", diff: "High", synergy: "ALL DEPTS.", limitations: "Inadequate infrastructure, lack of specialized software, limited specialized personnel, and delayed procurement.", status: "Pending", suggestedAction: "Review existing global best practices for government contact centers to benchmark SLAs before drafting." },
+  { kpiId: "CCM-2", category: "Contact Centre Management", kpi: "CMC: Oversee receipt, logging, tracking, and timely resolution of taxpayer stakeholders' enquiries and complaints via phone calls and emails.", diff: "High", synergy: "ALL DEPTS.", limitations: "High volume of enquiries, technical downtime, unresolved escalations, and inadequate staffing.", status: "Pending", suggestedAction: "Procure and configure a robust ticketing system to ensure no enquiry is dropped during high-volume periods." },
+
+  // 9. Change Management & Reform Transition (NEW)
+  { kpiId: "CMR-1", category: "Change Management & Reform Transition", kpi: "Develop and integrate change management frameworks to navigate public perception and minimize resistance to ongoing tax reforms.", diff: "High", synergy: "OES/RPC", limitations: "Negative public sentiment, misinformation, rigid stakeholder attitudes, and limited funding for advocacy campaigns.", status: "Pending", suggestedAction: "Conduct baseline sentiment analysis to clearly map current public resistance points." },
+  { kpiId: "CMR-2", category: "Change Management & Reform Transition", kpi: "Coordinate transitional communications and advocacy to align member states, Ex-Officios, and civic actors with new tax policies.", diff: "High", synergy: "ALL DEPTS.", limitations: "Conflicting political interests, delayed policy documents, logistical challenges, and misaligned internal messaging.", status: "Pending", suggestedAction: "Draft tailored briefing kits for Ex-Officios to standardize the institutional messaging across all states." }
 ];
 
 async function main() {
@@ -62,7 +70,7 @@ async function main() {
       data: item
     });
   }
-  console.log('Database successfully seeded with 35 initiatives!');
+  console.log('Database successfully seeded with 39 initiatives!');
 }
 
 main()
